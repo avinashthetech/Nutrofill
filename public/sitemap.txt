@@ -1,0 +1,12 @@
+https://www.nutrofill.com/
+https://www.nutrofill.com/products
+https://www.nutrofill.com/about
+https://www.nutrofill.com/contact
+
+# Product URLs
+https://www.nutrofill.com/products/whole-wheat-atta
+https://www.nutrofill.com/products/moong-dal
+https://www.nutrofill.com/products/urad-dal
+https://www.nutrofill.com/products/mixed-dal
+https://www.nutrofill.com/products/red-kidney-beans
+https://www.nutrofill.com/products/chana-dal

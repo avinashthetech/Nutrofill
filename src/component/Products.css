@@ -1,0 +1,103 @@
+.products-section {
+  background-color: #fdf3df; /* Light cream background */
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.products-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #a13d1d; /* Aashirvaad dark red */
+  margin-bottom: 10px;
+}
+
+.products-subtitle {
+  font-size: 18px;
+  color: #4d3b33;
+  margin-bottom: 50px;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* ✅ Always 3 columns */
+  gap: 40px;
+  justify-items: center;
+}
+
+
+.product-card {
+  background: none;
+  border: none;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-image {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #cce7e7 0%, #fdf3df 100%);
+    border-radius: 37% 25% 48% 38% / 49% 48% 39% 42% ;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.product-image img {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.08);
+
+}
+
+.product-card h3 {
+  color: #3b2a25;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 8px;
+  font-family: "Georgia", serif;
+  letter-spacing: 0.5px;
+}
+
+.product-card p {
+  display: none; /* hide description for cleaner layout */
+}
+
+.product-btn {
+  display: none; /* no button like Aashirvaad site */
+}
+
+
+/* ========== MOBILE VIEW ========== */
+@media (max-width: 768px) {
+  .products-container {
+    grid-template-columns: 1fr; /* ✅ one by one on phone */
+    gap: 30px;
+  }
+
+  .product-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .product-image img {
+    width: 160px;
+  }
+
+  .products-title {
+    font-size: 28px;
+  }
+}

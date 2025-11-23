@@ -1,0 +1,236 @@
+/* ============================
+   MAIN PAGE STYLING
+============================ */
+.bansi-page {
+  width: 100%;
+  padding: 60px 0;
+  background: #fff9f0;
+}
+
+.bansi-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.bansi-image img {
+  width: 420px;
+  mix-blend-mode: multiply;
+}
+
+.bansi-info {
+  max-width: 600px;
+}
+
+.bansi-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #d67c04;
+}
+
+.bansi-desc {
+  font-size: 18px;
+  margin: 10px 0 20px;
+  line-height: 1.5;
+}
+
+/* Pack size buttons */
+.pack-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.pack-btn {
+  padding: 12px 25px;
+  background: #f7a600;
+  border: none;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pack-btn:hover,
+.pack-btn.active {
+  background: #d67c04;
+  color: #fff;
+}
+
+/* Nutrition Toggle */
+.nutrition-toggle {
+  background: #d67c04;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 25px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+}
+
+/* Nutrition grid */
+.nutrition-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.nutrition-box {
+  background: #fff3e0;
+  padding: 16px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.nutrition-value {
+  font-size: 20px;
+  color: #d67c04;
+  font-weight: bold;
+}
+
+/* Why Choose Section */
+.bansi-why {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.bansi-why h2 {
+  font-size: 30px;
+  color: #d67c04;
+}
+
+.bansi-why ul {
+  margin-top: 15px;
+}
+
+.bansi-why li {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+/* Banner Section */
+.banner {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.banner img {
+  width: 600px;
+  border-radius: 20px;
+}
+
+
+
+/* ============================
+   TABLET FIX (max-width: 768px)
+============================ */
+@media (max-width: 768px) {
+  .bansi-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bansi-image img {
+    width: 350px;
+  }
+
+  .bansi-title {
+    font-size: 32px;
+  }
+
+  .bansi-desc {
+    font-size: 16px;
+  }
+
+  .nutrition-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .banner img {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+
+
+
+/* ============================
+   MOBILE FIX (max-width: 480px)
+============================ */
+@media (max-width: 480px) {
+
+  .bansi-page {
+    padding: 20px 0;
+  }
+
+  .bansi-container {
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .bansi-image img {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .bansi-info {
+    max-width: 100%;
+  }
+
+  .bansi-title {
+    font-size: 26px;
+  }
+
+  .bansi-desc {
+    font-size: 14px;
+  }
+
+  .pack-buttons {
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .pack-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .nutrition-toggle {
+    font-size: 15px;
+    padding: 8px 14px;
+  }
+
+  .nutrition-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+  }
+
+  .nutrition-box {
+    padding: 10px;
+  }
+
+  .nutrition-value {
+    font-size: 16px;
+  }
+
+  .bansi-why h2 {
+    font-size: 22px;
+  }
+
+  .bansi-why li {
+    font-size: 14px;
+  }
+
+  .banner img {
+    width: 100%;
+    max-width: 320px;
+  }
+}

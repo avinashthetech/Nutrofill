@@ -1,0 +1,274 @@
+/* ============================
+   GLOBAL FIX (No Right / Horizontal Space)
+   ============================ */
+html, body {
+  overflow-x: hidden !important;
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================
+   HERO SLIDER BASE STYLE
+   ============================ */
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full height on all devices */
+  overflow: hidden;
+  background-color: #fff5e6;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Slide --- */
+.slide {
+  position: absolute;
+  width: 100% !important;
+  height: 100% !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* --- Slide Content --- */
+.slide-content {
+  position: absolute;
+  bottom: 18%;
+  left: 12%;
+  color: #fff;
+  max-width: 600px;
+  z-index: 2;
+}
+
+.slide-content img {
+  width: 280px;
+  margin-bottom: 16px;
+}
+
+.slide-content h2 {
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.slide-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+/* Hero Button */
+.hero-btn {
+  background-color: #e53935;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #b71c1c;
+}
+
+/* --- Arrows --- */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #da001c;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  padding: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.arrow.left {
+  left: 40px;
+}
+
+.arrow.right {
+  right: 40px;
+}
+
+.arrow:hover {
+  background-color: #b22222;
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* --- Dots --- */
+.dots {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.dot.active,
+.dot:hover {
+  background-color: #e53935;
+  opacity: 1;
+}
+
+/* ============================
+   TABLET RESPONSIVE (1024px)
+   ============================ */
+@media (max-width: 1024px) {
+  .slide-content {
+    bottom: 15%;
+    left: 8%;
+    max-width: 500px;
+  }
+
+  .slide-content h2 {
+    font-size: 40px;
+  }
+
+  .slide-content img {
+    width: 200px;
+  }
+}
+
+/* ============================
+   TABLET / LARGE MOBILE (768px)
+   ============================ */
+@media (max-width: 768px) {
+
+  .hero-slider {
+    height: 90vh;
+  }
+
+  .slide-content {
+    bottom: 10%;
+    left: 6%;
+    max-width: 90%;
+  }
+
+  .slide-content h2 {
+    font-size: 32px;
+  }
+
+  .slide-content p {
+    font-size: 16px;
+  }
+
+  .slide-content img {
+    width: 160px;
+  }
+
+  .arrow {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .arrow.left {
+    left: 20px;
+  }
+
+  .arrow.right {
+    right: 20px;
+  }
+
+  .hero-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* ============================
+   MOBILE RESPONSIVE (480px)
+   NO WHITE SPACE ANYWHERE
+   ============================ */
+@media (max-width: 480px) {
+
+  body {
+    margin: 2px !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+  }
+
+  html {
+    overflow-x: hidden !important;
+  }
+
+  .hero-slider {
+    height: 80vh !important;
+  }
+
+  .slide {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  /* Arrows never overflow screen */
+  .arrow {
+    font-size: 14px;
+    padding: 7px;
+  }
+
+  .arrow.left {
+    left: 5px !important;
+  }
+
+  .arrow.right {
+    right: 5px !important;
+  }
+
+  .slide-content {
+    bottom: 8%;
+    left: 5%;
+    max-width: 90%;
+  }
+
+  .slide-content h2 {
+    font-size: 26px;
+  }
+
+  .slide-content p {
+    font-size: 14px;
+  }
+
+  .slide-content img {
+    width: 130px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+}

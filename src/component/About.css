@@ -1,0 +1,238 @@
+.about-section {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Hero Section */
+.about-hero {
+  position: relative;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  
+}
+
+.about-hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.about-hero-content {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.about-hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.about-hero-content span {
+  color: #e53935;
+}
+
+.about-tagline {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* Container */
+.about-container {
+  padding: 60px 10%;
+}
+
+/* About Section */
+.about-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 80px;
+  flex-wrap: wrap; /* mobile responsive */
+}
+
+/* Left Image Section */
+.about-left {
+  flex: 1;
+  min-width: 320px;
+}
+
+.about-left img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Right Text Section */
+.about-right {
+  flex: 1;
+  min-width: 320px;
+}
+
+.about-right h2 {
+  color: #e53935;
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.about-right p {
+  line-height: 1.7;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+/* Promise Section */
+.about-promise {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin: 80px 0;
+  flex-wrap: wrap;
+}
+
+.about-promise h2 {
+  
+  color: #e53935;
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.about-promise p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.about-promise img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Why Choose Section */
+.about-choose h2 {
+  color: #e53935;
+  margin-bottom: 25px;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.choose-grid {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Text Left - Image Right */
+.choose-grid ul {
+  flex: 1;
+  min-width: 320px;
+  list-style: none;
+  padding: 0;
+}
+
+.choose-grid li {
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.choose-grid img {
+  flex: 1;
+  min-width: 320px;
+  max-width: 450px;                                                 
+  border-radius: 12px;
+  object-fit: cover;
+  
+}
+
+/* Nutrition Section */
+.about-nutrition {
+  margin: 80px 0;
+}
+
+.about-nutrition h2 {
+  color: #e53935;
+  margin-bottom: 15px;
+}
+
+.about-nutrition ul {
+  columns: 2;
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-nutrition li {
+  margin-bottom: 5px;
+}
+
+/* Distributor */
+.about-distributor h2 {
+  color: #e53935;
+  margin-bottom: 15px;
+}
+
+.about-distributor p {
+  margin-bottom: 10px;
+}
+
+/* Offices */
+.about-offices h2 {
+  color: #e53935;
+  margin-bottom: 15px;
+}
+
+.about-offices ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-offices li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .about-header,
+  .about-promise,
+  .choose-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .choose-grid img,
+  .about-promise img {
+    width: 100%;
+  }
+
+  .about-left img,
+  .about-promise img {
+    margin-bottom: 20px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 36px;
+  }
+
+  .about-container {
+    padding: 40px 5%;
+  }
+}
