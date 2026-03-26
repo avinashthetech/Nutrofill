@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.css";
 import { FaFacebookF, FaInstagram, FaYoutube, FaXTwitter } from "react-icons/fa6";
 import { Helmet } from "react-helmet-async";   // ⭐ SEO import
+import logo from "../assets/logo.webp";
 
 const Footer = () => {
   return (
@@ -60,11 +61,7 @@ const Footer = () => {
 
           {/* Left Section */}
           <div className="footer-left">
-            <img
-              src="/src/assets/logo.webp"
-              alt="Nutrofill Logo"
-              className="footer-logo"
-            />
+                      <img src={logo} alt="Nutrofill Logo" className="footer-logo" />
             <p className="fssai">Lic. No. 12723030000084</p>
           </div>
 

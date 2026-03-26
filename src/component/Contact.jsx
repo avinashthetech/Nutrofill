@@ -64,7 +64,7 @@ const Contact = () => {
             "@type": "LocalBusiness",
             "name": "Nutrofill",
             "url": "https://www.nutrofill.com/contact",
-            "telephone": "+91 9451205866",
+            "telephone": "+91 9451205866,9284937714",
             "email": "nutrofill@gmail.com",
             "address": {
               "@type": "PostalAddress",
