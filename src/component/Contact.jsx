@@ -110,7 +110,7 @@ const Contact = () => {
             variants={fadeUp}
           >
             {[
-              { icon: <FaPhoneAlt />, title: "Phone", value: "+91 9451 20 5866" },
+              { icon: <FaPhoneAlt />, title: "Phone", value: "+91 9451 20 5866 ,9284937714", },
               { icon: <FaEnvelope />, title: "Email", value: "nutrofill@gmail.com" },
               {
                 icon: <FaMapMarkerAlt />,
